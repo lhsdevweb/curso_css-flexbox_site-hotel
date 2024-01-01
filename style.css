@@ -1,5 +1,5 @@
 @charset "UTF-8";
-* {margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, Helvetica, sans-serif;}
+* {margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; box-sizing: border-box;}
 
 header, #itacare, #fotos, #maisinfo div, form, footer {display: flex;}
 
@@ -41,19 +41,23 @@ hr {width: 200px; height: 2px; border: none; margin: auto; background-color: gra
 
 #maisinfo {background-color: black; color: white; text-align: center; padding-top: 40px;}
 #maisinfo p {width: 60%; margin: auto; line-height: 1.5em; padding-bottom: 40px;}
-#maisinfo section {color: lightgreen;} h3 {padding-top: 20px; padding-bottom: 20px;}
-#maisinfo div {justify-content: space-around;}
+#maisinfo div {justify-content: space-around; color: lightgreen;}
+#maisinfo h3 {padding-top: 20px; padding-bottom: 20px;}
+#maisinfo span {font-size: 50px;}
 #maisinfo div p {text-align: justify;}
 
 #newsletter {background-color: rgba(211, 211, 211, 0.548); text-align: center;}
 #newsletter p {width: 60%; margin: auto; padding-bottom: 40px;}
-form {padding-top: 40px; padding-bottom: 40px; justify-content: center;}
-input {width: 300px; padding: 6px;} 
+form {height: 100px; justify-content: center; align-items: center;}
+form input {width: 300px; padding: 6px;} 
 form button {background-color: rgb(83, 83, 83); color: white; padding: 8px; 
-                border: none; width: 100px; border-radius: 5px; margin-left: 10px;}
+             border: none; width: 100px; border-radius: 5px; margin-left: 10px;
+             text-transform: uppercase; font-size: .8em; cursor: pointer;}
 
-footer {background-color: black; color: white; height: 100px; font-weight: bold; 
-        justify-content: center; align-items: center;}
+footer {background-color: black; color: white; height: 200px; font-weight: bold; 
+        text-align: center; justify-content: center; align-items: center;}
+footer a {color: lightgreen; font-size: 40px; padding: 20px;}
+footer div p {margin-top: 20px;}
 
 @media (max-width: 600px) 
 {
@@ -64,6 +68,7 @@ footer {background-color: black; color: white; height: 100px; font-weight: bold;
     #p2 {font-size: 1em; padding-bottom: 20px;}
     #itacare button {padding: 15px; width: 120px; font-size: .7em;}
 
+    #hotel p {margin: auto; max-width: 400px;}
     #fotos div {flex-basis: 100%;}
     /* .menor, .maior {flex-basis: 100%;}  */       
     
@@ -74,5 +79,7 @@ footer {background-color: black; color: white; height: 100px; font-weight: bold;
 
     form input {width: 200px;}
 
-    footer {font-size: .8em; flex-direction: column;} footer p {padding-bottom: 10px;}
+    footer {font-size: .8em;} 
+    footer a {font-size: 30px; padding: 10px;} 
+    footer p {width: 70%; margin: auto; line-height: 1.5em;}
 }
