@@ -54,21 +54,19 @@ form button {background-color: rgb(83, 83, 83); color: white; padding: 8px;
              border: none; width: 100px; border-radius: 5px; margin-left: 10px;
              text-transform: uppercase; font-size: .8em; cursor: pointer;}
 
-footer {background-color: black; color: white; height: 200px; font-weight: bold; 
-        text-align: center; line-height: 1.5em; display: flex; flex-direction: column;}
-footer #icones {display: flex; justify-content: space-evenly; align-items: center;
-                width: 40%; margin: auto; padding: 20px 0 10px 0;}
-footer #icones a {color: lightgreen; font-size: 40px; padding: 10px;}
-/*
-    justify-content: center; align-items: center;
-    footer div p {margin-top: 20px;}
-    footer #icones {display: block;} 
-*/
+footer {background-color: black; color: white; height: 200px; text-align: center; 
+        line-height: 1.5em; display: flex; flex-direction: column;}
+
 footer p {display: flex; justify-content: center;}
 footer a {color: lightgreen; text-decoration: none;}
 footer a:hover {text-decoration: underline;}
-#rodape1 div, #rodape2 div {display: inline;}
-#rodape1 {display: block; margin-bottom: 40px; }
+        
+footer #icones {display: flex; justify-content: space-evenly; align-items: center;
+                width: 40%; margin: auto; padding: 20px 0 10px 0;}
+footer #icones a {font-size: 40px; padding: 10px;}
+
+#rodape1 {display: block; margin-bottom: 40px;}
+#rodape1 div {display: inline;}
 #rodape2 {display: none;}
 
 @media (max-width: 600px) 
@@ -92,8 +90,8 @@ footer a:hover {text-decoration: underline;}
     form input {width: 200px;}
 
     footer {font-size: .8em;} 
-    footer a {font-size: 30px; padding: 10px;} 
-    footer p {width: 70%; margin: auto; line-height: 1.5em;}
-    footer #rodape1 {display: none;}
-    footer #rodape2 {display: block; }
+    footer #icones a {font-size: 30px;} 
+    #rodape1 {display: none;}
+    #rodape2 {display: block; margin-bottom: 40px;}
+    #rodape2 div {display: inline;}
 }
