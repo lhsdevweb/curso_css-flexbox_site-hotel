@@ -5,7 +5,8 @@ header, #itacare, #fotos, #maisinfo div, form, footer {display: flex;}
 
 header {justify-content: space-between; align-items: center; padding-right: 10px;}
 header img {width: 200px; padding: 10px;} 
-a {padding: 10px; text-decoration: none;} a:hover {text-decoration: underline;}
+header menu a {padding: 10px; text-decoration: none;} 
+header menu a:hover {text-decoration: underline;}
 
 #itacare {background-image: url(img/praia.jpg); height: 100vh; background-size: cover;
           color: white; text-align: center; justify-content: center; align-items: center;}
@@ -55,19 +56,24 @@ form button {background-color: rgb(83, 83, 83); color: white; padding: 8px;
              text-transform: uppercase; font-size: .8em; cursor: pointer;}
 
 footer {background-color: black; color: white; height: 200px; text-align: center; 
-        line-height: 1.5em; display: flex; flex-direction: column;}
+        flex-direction: column; padding-bottom: 40px;}
 
-footer p {display: flex; justify-content: center;}
 footer a {color: lightgreen; text-decoration: none;}
 footer a:hover {text-decoration: underline;}
         
-footer #icones {display: flex; justify-content: space-evenly; align-items: center;
-                width: 40%; margin: auto; padding: 20px 0 10px 0;}
-footer #icones a {font-size: 40px; padding: 10px;}
+#icones {display: flex; justify-content: space-evenly; align-items: center;
+            width: 40%; margin: auto; padding-top: 20px;}
+#icones a {font-size: 40px; padding: 10px;}
 
-#rodape1 {display: block; margin-bottom: 40px;}
-#rodape1 div {display: inline;}
-#rodape2 {display: none;}
+#paragrafos {line-height: 1.5em;} 
+footer div {display: flex; justify-content: center;}
+#paragrafo3 {display: none;}
+
+@media (max-width: 700px) {
+    #paragrafo2 {display: none;}
+    #paragrafo3 {display: block; text-align: center;}
+    #paragrafo3 div {display: flex;}
+}
 
 @media (max-width: 600px) 
 {
@@ -91,7 +97,9 @@ footer #icones a {font-size: 40px; padding: 10px;}
 
     footer {font-size: .8em;} 
     footer #icones a {font-size: 30px;} 
-    #rodape1 {display: none;}
-    #rodape2 {display: block; margin-bottom: 40px;}
-    #rodape2 div {display: inline;}
+}
+
+@media (max-width: 400px) {
+    #paragrafo1 {display: block; text-align: center;}
+    #paragrafo1 .espaço {display: none;}
 }
