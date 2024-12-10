@@ -67,7 +67,7 @@ footer a:hover {text-decoration: underline;}
 
 #paragrafos {line-height: 1.5em;} 
 footer div {display: flex; justify-content: center;}
-#paragrafo3 {display: none;}
+#paragrafo3, #paragrafo4 {display: none;}
 
 @media (max-width: 700px) {
     #paragrafo2 {display: none;}
