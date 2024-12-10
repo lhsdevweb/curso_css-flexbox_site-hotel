@@ -99,7 +99,7 @@ footer div {display: flex; justify-content: center;}
     footer #icones a {font-size: 30px;} 
 }
 @media (max-width: 440px) {
-    #hotel {padding: 0 20px;background-color: rgba(211, 211, 211, 0.767)}
+    #hotel {padding: 0 20px;}
     #paragrafo1 {display: block; text-align: center;}
     #paragrafo1 .espaço {display: none;}
 }
