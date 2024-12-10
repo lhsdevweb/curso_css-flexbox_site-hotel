@@ -98,8 +98,14 @@ footer div {display: flex; justify-content: center;}
     footer {font-size: .8em;} 
     footer #icones a {font-size: 30px;} 
 }
-
-@media (max-width: 400px) {
+@media (max-width: 440px) {
+    #hotel {padding: 0 10px;}
     #paragrafo1 {display: block; text-align: center;}
     #paragrafo1 .espaço {display: none;}
+}
+@media (max-width: 320px) {
+    header menu a {display: block; text-align: center;}
+    form {flex-direction: column; justify-content: space-evenly;}
+    #paragrafo3 {display: none;}    
+    #paragrafo4 {display: block;} 
 }
